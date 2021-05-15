@@ -1,8 +1,8 @@
 package trade
 
 import (
-	"github.com/dayr-trade-calculator/pkg/cities"
-	"github.com/dayr-trade-calculator/pkg/goods"
+	"github.com/LiuJin1987/dayr-trade-calculator/pkg/cities"
+	"github.com/LiuJin1987/dayr-trade-calculator/pkg/goods"
 )
 
 type trade interface {

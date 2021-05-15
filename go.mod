@@ -1,3 +1,3 @@
-module github.com/dayr-trade-calculator
+module github.com/LiuJin1987/dayr-trade-calculator
 
 go 1.13

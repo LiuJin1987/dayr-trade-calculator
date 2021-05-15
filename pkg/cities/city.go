@@ -2,8 +2,8 @@ package cities
 
 import (
 	"fmt"
-	"github.com/dayr-trade-calculator/pkg/goods"
-	"github.com/dayr-trade-calculator/pkg/price"
+	"github.com/LiuJin1987/dayr-trade-calculator/pkg/goods"
+	"github.com/LiuJin1987/dayr-trade-calculator/pkg/price"
 )
 
 const (

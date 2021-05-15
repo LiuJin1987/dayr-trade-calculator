@@ -1,6 +1,6 @@
 package main
 
-import "github.com/dayr-trade-calculator/pkg/cities"
+import "github.com/LiuJin1987/dayr-trade-calculator/pkg/cities"
 
 func main() {
 	cities.PrintCityList()
