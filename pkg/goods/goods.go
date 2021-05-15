@@ -8,14 +8,10 @@ import (
 
 type Good struct {
 	name  string
-	price *price.Price
+	price price.Price
 }
 
-func MakeLabel(name string) Good {
-	return Good{name, nil}
-}
-
-func New(name string, price *price.Price) Good {
+func New(name string, price price.Price) Good {
 	return Good{name, price}
 }
 
@@ -27,21 +23,17 @@ func (good *Good) SetName(name string) {
 	good.name = name
 }
 
-func (good Good) GetPrice() *price.Price {
+func (good Good) GetPrice() price.Price {
 	return good.price
 }
 
-func (good *Good) SetPrice(priceToSet *price.Price) {
+func (good *Good) SetPrice(priceToSet price.Price) {
 	good.price = priceToSet
 }
 
-func (good *Good) tradeFor(goodToBuy Good, amount int) {
-
-}
-
-func PrintCatalogue(goods []Good) {
-	for _, good := range goods {
-		fmt.Println(good)
+func PrintCatalogue(catalogue map[string]price.Price) {
+	for _, v := range catalogue {
+		fmt.Println(v)
 	}
 }
 
@@ -102,11 +94,11 @@ const (
 	HomemadeWine       = "Homemade wine"
 	Honey              = "Honey"
 	InsulatingTape     = "Insulating tape"
-	IR_190             = "IR-190"
+	Ir190              = "IR-190"
 	IronPipe           = "Iron pipe"
 	Jam                = "Jam"
 	Lead               = "Lead"
-	Lidiacide_34       = "Lidiacide-34"
+	Lidiacide34        = "Lidiacide-34"
 	Lighter            = "Lighter"
 	Lymph              = "Lymph"
 	MachinOil          = "Machin oil"
